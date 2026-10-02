@@ -5,16 +5,24 @@
 <body>
 <h1>Bhaskara</h1>
 <input type="text" id="aValue"/>x²
-<input type="text" id="aValue"/>x
-<input type="text" id="aValue"/> = 0
+<input type="text" id="bValue"/>x
+<input type="text" id="cValue"/> = 0
 
 <br/>
 <input type="button" onclick="calcular()" value="calcular"/>
 
+
 </body>
 <script>
     function calcular() {
+        let a = document.getElementById("aValue").value;
+        let b = document.getElementById("bValue").value;
+        let c = document.getElementById("cValue").value;
+        let delta = (b*b) - 4*a*c;
+        let x = (b*-1 + delta ** 0,5) / (2*a);
+        console.log(x);
         alert('calcular');
+        return x
     }
 </script>
 </html>
