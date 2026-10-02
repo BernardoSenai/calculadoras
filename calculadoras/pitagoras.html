@@ -4,6 +4,26 @@
 </head>
 <body>
     <h1>Pitagoras</h1>
-    
+<input type="text" id="aValue"/>hipotenusa
+<input type="text" id="bValue"/>cateto
+<input type="text" id="cValue"/>cateto
+
+<br/>
+<input type="button" onclick="calcular()" value="calcular"/>
+
 </body>
+<script>
+    function calcular() {
+        let a = document.getElementById("aValue").value;
+        let b = document.getElementById("bValue").value;
+        let c = document.getElementById("cValue").value;
+        
+        a = b**2 + c**2
+        let resultado = a**0.5
+        alert(resultado)
+    }
+</script>
+
+
+
 </html>
