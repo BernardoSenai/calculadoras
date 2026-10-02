@@ -20,9 +20,12 @@
         let c = document.getElementById("cValue").value;
         let delta = (b*b) - 4*a*c;
         let x = (b*-1 + delta ** 0,5) / (2*a);
-        console.log(x);
-        alert('calcular');
-        return x
+        if (delta < 0) {
+            alert('delta negativo')
+            
+        }else{alert(x)}
+
+
     }
 </script>
 </html>
